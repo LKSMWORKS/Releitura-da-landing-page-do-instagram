@@ -1,0 +1,165 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+
+body {
+    width: 100%;
+    min-height: 100vh;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+}
+
+.soccergram-wrapper {
+    display: flex;
+    align-items: center;
+    justify-content: start;
+    width: 60%;
+    height: 100vh;
+}
+
+.soccergram-phone {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 50%;
+}
+
+.soccergram-phone img {
+    height: 50rem;
+}
+
+.soccergram-continue {
+    display: flex;
+    align-items: center; /* horizontal */
+    justify-content: space-around; /* vertical */
+    flex-direction: column;
+    width: 50%;
+    min-height: 34rem;
+}
+
+.group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    
+    width: 100%;
+    padding: 1.3rem 0;
+    border: 4px solid white;
+}
+
+.group:nth-child(1) {
+    min-height: 19rem;
+}
+
+.soccergram-logo {
+    height: 3rem;
+}
+
+.profile-photo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    border: 4px solid white;
+    overflow: hidden;
+}
+
+.profile-photo img {
+    height: 6rem;
+}
+
+.soccergram-login {
+    background-color: white;
+    color: green;
+    padding: 8px;
+    border-radius: 4px;
+}
+
+.soccergram-logout {
+    color: white;
+    margin-top: 1rem;
+    font-weight: bold;
+}
+
+.not-account {
+    color: white;
+}
+
+.get-app {
+    color: white;
+}
+
+.link-blue {
+    color: white;
+    font-weight: bold;
+}
+
+.get-the-app {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 1.3rem 0;
+}
+
+.download {
+    display: flex;
+    width: 100%;
+    justify-content: space-evenly;
+    align-items: center;
+    padding: 1rem;
+}
+
+.app-download {
+    height: 3rem;
+    width: 10rem;
+    background-size: cover;
+}
+
+.app-download:nth-child(1) {
+    background-image: url("img/apple-button.png");
+}
+
+.app-download:nth-child(2) {
+    background-image: url('img/googleplay-button.png');
+}
+
+/* media queries */
+
+
+@media (max-width: 1024px) {
+    .soccergram-wrapper {
+        width: 90%;
+    }
+}
+
+@media (max-width: 650px) {
+    body {
+        background-color: #ffffff;
+    }
+
+    .soccergram-wrapper {
+        width: 90%;
+    }
+
+    .soccergram-phone {
+        display: none;
+    }
+
+    .soccergram-continue {
+        width: 100%;
+    }
+    
+    .group {
+        border: 1px solid transparent;
+    }
+}
